@@ -17,6 +17,7 @@ Route::group([
     Route::get('/logout', [App\Http\Controllers\Home\HomeAuthController::class, 'logout']);
     Route::post('/refresh', [App\Http\Controllers\Home\HomeAuthController::class, 'refresh']);
     Route::get('/user-profile', [App\Http\Controllers\Home\HomeAuthController::class, 'userProfile']);
+    Route::get('/get-all', [App\Http\Controllers\Home\HomeAuthController::class, 'getAll']);
 
 
 });

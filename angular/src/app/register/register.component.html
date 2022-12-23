@@ -1,0 +1,236 @@
+<section class="grid grid-cols-1 lg:grid-cols-2 bg-white dark:bg-gray-800">
+  <div
+    class="mt-10 w-full lg:mt-2 px-4 mx-auto xl:py-20 md:w-3/5 lg:w-4/5 xl:w-3/5"
+  >
+    <h1
+      class="text-center mb-4 -mt-3 text-4xl font-bold text-center text-gray-700 dark:text-white leading-snug tracking-tight dark:text-emerald-300 text-gray-900 md:text-4xl"
+    >
+      Sign up
+    </h1>
+    <div class="mt-8 space-y-10"></div>
+    <form
+      [formGroup]="registerForm"
+      (ngSubmit)="onSubmit()"
+      class="mt-8 space-y-4"
+    >
+      <label class="block text-sm text-gray-600 dark:text-gray-200">
+        <span
+          class="block mb-1 text-xs font-medium text-gray-700 dark:text-emerald-300"
+          >Your First Name</span
+        >
+        <input
+          class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-gray-400 dark:focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
+          type="text"
+          type="email"
+          formControlName="firstName"
+          name="firstName"
+          [ngClass]="{
+            'border-red-400': submitted && f.firstName.errors
+          }"
+          placeholder="Ex. khaled"
+          required=""
+        />
+        <div
+          *ngIf="submitted && f.firstName.errors"
+          class="text-red-600 text-xs"
+        >
+          <div *ngIf="f.firstName.errors.required">First Name is required</div>
+        </div>
+      </label>
+      <label class="block text-sm text-gray-600 dark:text-gray-200">
+        <span
+          class="block mb-1 text-xs font-medium text-gray-700 dark:text-emerald-300"
+          >Your Last Name</span
+        >
+        <input
+          class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-gray-400 dark:focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
+          type="text"
+          type="text"
+          formControlName="lastName"
+          name="lastName"
+          [ngClass]="{
+            'border-red-400': submitted && f.lastName.errors
+          }"
+          placeholder="Ex. jamesy"
+          required=""
+        />
+        <div
+          *ngIf="submitted && f.lastName.errors"
+          class="text-red-600 text-xs"
+        >
+          <div *ngIf="f.lastName.errors.required">lastName is required</div>
+        </div>
+      </label>
+      <label class="block text-sm text-gray-600 dark:text-gray-200">
+        <span
+          class="block mb-1 text-xs font-medium text-gray-700 dark:text-emerald-300"
+          >Your Email</span
+        >
+        <input
+          class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-gray-400 dark:focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
+          type="email"
+          formControlName="email"
+          [ngClass]="{
+            'border-red-400': submitted && f.email.errors
+          }"
+          name="email"
+          id="email"
+          placeholder="Ex. james@bond.com"
+          inputmode="email"
+          required=""
+        />
+        <div *ngIf="submitted && f.email.errors" class="text-red-600 text-xs">
+          <div *ngIf="f.email.errors.required">email is required</div>
+        </div>
+      </label>
+      <label class="block text-sm text-gray-600 dark:text-gray-200">
+        <span
+          class="block mb-1 text-xs font-medium text-gray-700 dark:text-emerald-300"
+          >Your Password</span
+        >
+        <input
+          class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-gray-400 dark:focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
+          type="password"
+          formControlName="password"
+          [ngClass]="{
+            'border-red-400': submitted && f.password.errors
+          }"
+          name="password"
+          id="password"
+          placeholder="••••••••"
+          required=""
+        />
+        <div
+          *ngIf="submitted && f.password.errors"
+          class="text-red-600 text-xs"
+        >
+          <div *ngIf="f.password.errors.required">Password is required</div>
+        </div>
+      </label>
+      <label class="block text-sm text-gray-600 dark:text-gray-200">
+        <span
+          class="block mb-1 text-xs font-medium text-gray-700 dark:text-emerald-300"
+          >Confirm Your Password</span
+        >
+        <input
+          class="block w-full px-4 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-gray-400 dark:focus:border-gray-400 focus:ring-gray-400 focus:outline-none focus:ring focus:ring-opacity-40"
+          type="password"
+          formControlName="password_confirmation"
+          [ngClass]="{
+            'border-red-400': submitted && f.password.errors
+          }"
+          name="password_confirmation"
+          id="password_confirmation"
+          placeholder="••••••••"
+          required=""
+        />
+        <div
+          *ngIf="f.password_confirmation.errors"
+          class="text-red-600 text-xs"
+        >
+          <div *ngIf="submitted && f.password_confirmation.errors.required">
+            Password Confirm is required
+          </div>
+          <div *ngIf="f.password_confirmation.errors?.passwordMatchValidator">
+            Passwords Must Match
+          </div>
+        </div>
+      </label>
+      <button
+        [disabled]="loading"
+        class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-red-600 rounded-md hover:bg-red-400 focus:outline-none focus:bg-red-400 focus:ring focus:ring-red-300 focus:ring-opacity-50"
+      >
+        <svg
+          *ngIf="loading"
+          style="margin: auto; background: none; display: block"
+          width="120"
+          height="30"
+          viewBox="0 0 120 30"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#fff"
+        >
+          <circle cx="15" cy="15" r="15">
+            <animate
+              attributeName="r"
+              from="15"
+              to="15"
+              begin="0s"
+              dur="0.8s"
+              values="15;9;15"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="fill-opacity"
+              from="1"
+              to="1"
+              begin="0s"
+              dur="0.8s"
+              values="1;.5;1"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="60" cy="15" r="9" fill-opacity="0.3">
+            <animate
+              attributeName="r"
+              from="9"
+              to="9"
+              begin="0s"
+              dur="0.8s"
+              values="9;15;9"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="fill-opacity"
+              from="0.5"
+              to="0.5"
+              begin="0s"
+              dur="0.8s"
+              values=".5;1;.5"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+          </circle>
+          <circle cx="105" cy="15" r="15">
+            <animate
+              attributeName="r"
+              from="15"
+              to="15"
+              begin="0s"
+              dur="0.8s"
+              values="15;9;15"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+            <animate
+              attributeName="fill-opacity"
+              from="1"
+              to="1"
+              begin="0s"
+              dur="0.8s"
+              values="1;.5;1"
+              calcMode="linear"
+              repeatCount="indefinite"
+            />
+          </circle>
+        </svg>
+        <span *ngIf="!loading">Sign up</span>
+      </button>
+    </form>
+    <div
+      class="pt-6 mt-6 text-sm font-medium text-gray-700 border-t border-gray-200 dark:text-emerald-300"
+    >
+      Already have an account?
+      <a
+        routerLink="/login"
+        class="text-red-700 hover:text-red-900 focus:underline hover:underline"
+        >Sign Up</a
+      >
+    </div>
+  </div>
+  <div class="hidden lg:block space-y-10 bg-gray-100">
+    <img src="assets/svg/register.svg" alt="login" />
+  </div>
+</section>
