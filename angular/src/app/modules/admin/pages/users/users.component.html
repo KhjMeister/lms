@@ -1,0 +1,309 @@
+<section class="flex-1 py-6 px-4 md:px-4 lg:px-8">
+  <!-- Header -->
+  <div class="flex items-center justify-between">
+    <span class="text-gray-900 text-xl font-semibold">Users</span>
+    <div class="flex items-center space-x-4">
+      <button class="bg-gray-200 p-2 text-gray-600 rounded hover:bg-gray-300">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3"
+          ></path>
+        </svg>
+      </button>
+      <button
+        class="bg-primary hover:bg-primary/90 py-1.5 px-4 rounded flex items-center text-white space-x-1"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12 5.25a.75.75 0 01.75.75v5.25H18a.75.75 0 010 1.5h-5.25V18a.75.75 0 01-1.5 0v-5.25H6a.75.75 0 010-1.5h5.25V6a.75.75 0 01.75-.75z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <span>Promote User</span>
+      </button>
+      <!-- Menu button on small screen -->
+      <button
+        class="lg:hidden bg-gray-50 p-2 text-gray-600 rounded hover:bg-gray-300 focus:text-primary outline-none focus:drop-shadow"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm7 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Navigation View -->
+  <nav
+    class="flex items-center mt-8 border-b space-x-10 text-gray-400 font-medium"
+  >
+    <a
+      href="#"
+      class="flex items-center space-x-1 text-gray-600 border-b-2 border-b-primary pb-3"
+    >
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122"
+          ></path>
+        </svg>
+      </span>
+      <span>Overview</span>
+    </a>
+    <a
+      href="#"
+      class="flex items-center space-x-1 pb-3 border-b-2 border-transparent hover:border-b-primary hover:text-gray-600"
+    >
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+          ></path>
+        </svg>
+      </span>
+      <span>List View</span>
+    </a>
+    <a
+      href="#"
+      class="flex items-center space-x-1 pb-3 border-b-2 border-transparent hover:border-b-primary hover:text-gray-600"
+    >
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-5 h-5"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"
+          ></path>
+        </svg>
+      </span>
+      <span>Segment</span>
+    </a>
+  </nav>
+
+  <div class="mt-8 text-gray-500">
+    <table class="w-full table-auto">
+      <thead
+        class="uppercase tracking-wider border-b h-7 align-top text-xs font-semibold"
+      >
+        <tr>
+          <td class="min-w-fit w-3/5 md:w-1/2 lg:w-fit">User</td>
+          <td class="">Type</td>
+          <td class="hidden lg:table-cell">Join time</td>
+          <td class="hidden xl:table-cell">Actions</td>
+          <td class="hidden xl:table-cell"></td>
+        </tr>
+      </thead>
+      <tbody>
+        <div class="flex flex-col" *ngIf="loading">
+          <div class="flex flex-row justify-center">
+            <div class="flex">
+              <div class="relative">
+                <!-- Outer Ring-->
+                <div
+                  class="w-12 h-12 rounded-full absolute border-2 border-dashed border-gray-200"
+                ></div>
+
+                <!-- Inner Ring -->
+                <div
+                  class="w-12 h-12 rounded-full animate-spin absolute border-2 border-dashed border-red-500 border-t-transparent"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <tr
+          *ngFor="let user of users"
+          class="h-16 border-b border-gray-100 hover:bg-primary/5"
+        >
+          <td class="flex items-center space-x-3 h-16">
+            <img
+              class="rounded-full h-9 w-9"
+              src="assets/img/avatar.jpg"
+              alt=""
+              srcset=""
+            />
+            <div class="flex flex-col">
+              <span class="font-semibold text-sm"
+                >{{ user.firstName }} {{ user.lastName }}</span
+              >
+              <span class="text-xs">{{ user.email }}</span>
+            </div>
+          </td>
+          <td class="text-xs space-y-1.5">
+            <span
+              *ngIf="user.role == 'Admin'"
+              class="px-2 py-0.5 inline-block text-blue-500 bg-blue-50 rounded-full"
+              >{{ user.role }}</span
+            >
+            <span
+              *ngIf="user.role == 'User'"
+              class="px-2 py-0.5 inline-block text-pink-500 bg-pink-50 rounded-full"
+              >{{ user.role }}</span
+            >
+            <span
+              *ngIf="user.role == 'Instructor'"
+              class="px-2 py-0.5 inline-block text-pink-500 bg-pink-50 rounded-full"
+              >{{ user.role }}</span
+            >
+          </td>
+          <td class="hidden lg:table-cell">2022-08-27</td>
+          <td class="text-xl hidden xl:table-cell">&gt;</td>
+        </tr>
+        <!-- <tr class="h-16 border-b border-gray-100 hover:bg-primary/5">
+            <td class="flex items-center space-x-3 h-16">
+              <img
+                class="rounded-full h-9 w-9"
+                src="https://randomuser.me/api/portraits/men/9.jpg"
+                alt=""
+                srcset=""
+              />
+              <div class="flex flex-col">
+                <span class="font-semibold text-sm">Martin Hughes</span>
+                <span class="text-xs">martin.hk@mclient.com</span>
+              </div>
+            </td>
+            <td class="text-xs space-y-1.5">
+              <span
+                class="px-2 py-0.5 inline-block text-blue-500 bg-blue-50 rounded-full"
+                >VIP Client</span
+              >
+              <span
+                class="px-2 py-0.5 inline-block text-pink-500 bg-pink-50 rounded-full"
+                >Early Adaptor</span
+              >
+              <span
+                class="px-2 py-0.5 inline-block text-teal-500 bg-teal-50 rounded-full"
+                >Sales</span
+              >
+              <span
+                class="px-2 py-0.5 inline-block text-orange-500 bg-orange-50 rounded-full"
+                >Finance</span
+              >
+            </td>
+            <td class="hidden lg:table-cell">2021-01-29</td>
+            <td class="text-xl hidden xl:table-cell">&gt;</td>
+          </tr> -->
+      </tbody>
+      <tfoot>
+        <tr class="h-24">
+          <td colspan="4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-sm text-gray-400">
+                <span>Rows per page</span>
+                <span class="text-gray-500 font-semibold ml-2">10</span>
+                <span>
+                  <svg
+                    class="w-5 h-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </span>
+                <span class="ml-2">out of</span>
+                <span class="ml-2">386</span>
+              </div>
+
+              <div>
+                <nav
+                  class="isolate inline-flex rounded-md items-center space-x-3 text-gray-400"
+                  aria-label="Pagination"
+                >
+                  <span class="p-0.5 bg-gray-100 rounded">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                  <div class="hidden sm:inline-flex items-center space-x-3">
+                    <span class="text-gray-500 font-semibold">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>...</span>
+                    <span>15</span>
+                    <span>16</span>
+                  </div>
+                  <span class="p-0.5 bg-gray-100 rounded">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      class="w-5 h-5"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                        clip-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </span>
+                </nav>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+</section>
