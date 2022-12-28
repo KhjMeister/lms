@@ -43,7 +43,7 @@ const routes: Routes = [
     },
 
     // otherwise redirect to home
-    { path: '**', redirectTo: 'register' }
+    { path: '**', redirectTo: 'login' }
 ];
 
 @NgModule({
