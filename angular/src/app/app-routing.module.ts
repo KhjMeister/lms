@@ -7,7 +7,7 @@ import { Role } from './_models';
 
 const routes: Routes = [
     {
-        path: '',
+        path: 'landing',
         loadChildren: () =>
             import('./modules/landing/landing.module').then((m) => m.LandingModule),
     },
@@ -43,7 +43,7 @@ const routes: Routes = [
     },
 
     // otherwise redirect to home
-    // { path: '**', redirectTo: '' }
+    { path: '**', redirectTo: 'register' }
 ];
 
 @NgModule({
